@@ -131,7 +131,7 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 60px;
+  max-height: 100px;
 }
 
 .scrolled-offset {
@@ -836,6 +836,7 @@ section {
   box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 100%;
+  border-radius: 5px;
 }
 
 .counts .count-box i {
@@ -890,6 +891,7 @@ section {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   position: relative;
   background: #fff;
+  border-radius: 5px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1238,6 +1240,7 @@ section {
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
   text-align: center;
+  border-radius: 5px;
 }
 
 .pricing h3 {
@@ -1350,6 +1353,7 @@ section {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
   background: #fff;
+  border-radius: 5px; 
 }
 
 .team .member img {
@@ -1403,6 +1407,7 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
+  border-radius: 5px;
 }
 
 .contact .info-box i {
