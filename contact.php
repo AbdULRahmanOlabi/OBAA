@@ -19,12 +19,12 @@
   if (mail($recipient, $email_subject, $body, $emailheader)) {
     echo '<script>
     alert("Email Sent Successfully")
-    window.location.replace("index");
+    window.location.replace("index-En");
     </script>';
   } else {
     echo '<script>
     alert("Sorry, Failed While Sending Mail!")
-    window.location.replace("index");
+    window.location.replace("index-En");
     </script>';
   }
 ?>
