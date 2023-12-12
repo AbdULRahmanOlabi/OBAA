@@ -688,6 +688,15 @@ section {
   color: #fff;
 }
 
+#FirstCycleDivAR,
+#MalesDivAR,
+#FemalesDivAR,
+#FirstCycleDiv,
+#MalesDiv,
+#FemalesDiv {
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/

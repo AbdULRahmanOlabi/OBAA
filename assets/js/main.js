@@ -259,3 +259,45 @@
   new PureCounter();
 
 })()
+
+document.addEventListener('DOMContentLoaded', function () {
+  var MalesDivAR = document.getElementById('MalesDivAR');
+  MalesDivAR.addEventListener('click', function () {
+      window.location.href = 'Males-Gallery-Details-AR';
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var FemalesDivAR = document.getElementById('FemalesDivAR');
+  FemalesDivAR.addEventListener('click', function () {
+      window.location.href = 'Females-Gallery-Details-AR'; 
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var FirstCycleDivAR = document.getElementById('FirstCycleDivAR');
+  FirstCycleDivAR.addEventListener('click', function () {
+      window.location.href = 'FirstCycle-Gallery-Details-AR'; 
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var MalesDiv = document.getElementById('MalesDiv');
+  MalesDiv.addEventListener('click', function () {
+      window.location.href = 'Males-Gallery-Details'; 
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var FemalesDiv = document.getElementById('FemalesDiv');
+  FemalesDiv.addEventListener('click', function () {
+      window.location.href = 'Females-Gallery-Details'; 
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var FirstCycleDiv = document.getElementById('FirstCycleDiv');
+  FirstCycleDiv.addEventListener('click', function () {
+      window.location.href = 'FirstCycle-Gallery-Details'; 
+  });
+});
