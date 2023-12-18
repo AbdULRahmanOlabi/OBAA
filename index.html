@@ -19,6 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -59,16 +60,16 @@
             <div class="logo">
                 <!-- <h1><a href="index-En">OBAA</a></h1> -->
                 <!-- Uncomment below if you prefer to use an logo image -->
-                <a href="index-En"><img src="assets/img/OBAA-Logo.png" alt="شعار المدرسة" class="img-fluid"></a>
+                <a href="index"><img src="assets/img/OBAA-Logo.png" alt="شعار المدرسة" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="active" href="index">الصفحة الرئيسية</a></li>
                     <li><a href="About-AR">حول المدرسة</a></li>
-                    <li><a href="Services-AR">خدمات المدرسة</a></li>
+                    <!-- <li><a href="Services-AR">خدمات المدرسة</a></li> -->
                     <li><a href="Team-AR">فريق العمل</a></li>
-                    <li><a href="Gallery-AR">الاستديو</a></li>
+                    <li><a href="Gallery-AR">المعرض</a></li>
                     <li><a href="LMS & SMS-AR">أنظمة إدارة المدرسة والمحتوى</a></li>
                     <li><a href="Contact-AR">تواصل معنا</a></li>
                     <li class="dropdown has-dropdown" style="float: left;"><a style="float: left;" href=""><i
@@ -96,17 +97,27 @@
                 <div class="carousel-inner" role="listbox">
 
                     <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+                    <!-- <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2 class="animate__animated animate__fadeInDown"> مرحبا بك في <span>مدرسة عمر بن عبد
-                                        العزيز</span></h2>
-                                <p class="animate__animated animate__fadeInUp" style="font-size: 20px;">أهلاً بكم في
-                                    الموقع الرسمي لمدرسة عمر بن
-                                    عبد العزيز الخاصة، حيث الحداثة والأصالة تسعى مدرستنا إلى توفير تعليم عالي الجودة
-                                    ضمن بيئة تعليمية محببة وملهمة ومشجعة لجميع طلابها</p>
+                                <h3 class="animate__animated animate__fadeInDown"> مرحبا بكم في <span>الموقع الرسمي
+                                        لمدرسة عمر بن عبد العزيز</span></h3>
+                                <p class="animate__animated animate__fadeInUp" style="font-size: 20px;">حيث نقدم تعليما
+                                    عالي الجودة ضمن بيئة تعليمية محببة وملهمة و مشجعة لجميع الطلاب</p>
                                 <a href="" class="btn-get-started animate__animated animate__fadeInUp">احجز مقعدك
                                     الآن</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <!-- Video -->
+                    <div class="carousel-item active">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <video autoplay muted width="100%" height="auto" alt="Sky">
+                                    <source src="assets/img/slide/OBAA.mp4" type="video/mp4">
+                                    <p>عذرًا، متصفحك لا يدعم مقاطع الفيديو المضمنة</p>
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -140,7 +151,7 @@
                                     <path
                                         d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0" />
                                 </svg></i>
-                            <h3><a href="Males-Gallery-Details-AR">قسم الذكور</a></h3>
+                            <h3><a href="Gallery-AR?filter=filter-M">قسم الذكور</a></h3>
                             <p>يضم الحلقة الثانية تعليم أساسي وقسم الثانوي ذكور، من الصف السابع حتى الصف الثالث الثانوي
                             </p>
                         </div>
@@ -154,16 +165,16 @@
                                     <path
                                         d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.5 12.25V12h1v3.25a.75.75 0 0 0 1.5 0V12h1l-1-5v-.215a.285.285 0 0 1 .56-.078l.793 2.777a.711.711 0 1 0 1.364-.405l-1.065-3.461A3 3 0 0 0 8.784 3.5H7.216a3 3 0 0 0-2.868 2.118L3.283 9.079a.711.711 0 1 0 1.365.405l.793-2.777a.285.285 0 0 1 .56.078V7l-1 5h1v3.25a.75.75 0 0 0 1.5 0Z" />
                                 </svg></i>
-                            <h3><a href="Females-Gallery-Details-AR">قسم الإناث</a></h3>
+                            <h3><a href="Gallery-AR?filter=filter-FM">قسم الإناث</a></h3>
                             <p>يضم الحلقة الثانية تعليم أساسي وقسم الثانوي إناث، من الصف السابع حتى الصف الثالث الثانوي
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4 mt-4 mt-lg-0" id="FirstCycleDivAR">
                         <div class="icon-box">
                             <i class="bi bi-people-fill"></i>
-                            <h3><a href="FirstCycle-Gallery-Details-AR">قسم الحلقة الأولى</a></h3>
+                            <h3><a href="Gallery-AR?filter=filter-FC">قسم الحلقة الأولى</a></h3>
                             <p>المرحلة التأسيسية للطالب
                                 ويضم الطلاب من الصف الأول حتى الصف السادس تعليم أساسي
                             </p>
@@ -181,24 +192,34 @@
                 <div class="row">
 
                     <div class="col-lg-6 pt-4 pt-lg-0 content" style="text-align: right;">
-                        <h3>مدرسة عمر بن عبد العزيز الخاصة</h3>
-                        <p style="font-size: 20px;">
-                            مؤسسة تعليمية تأسست عام 2003 تقع في ريف دمشق وهي تدرس مناهج دراسية مصممة بعناية للصفوف
-                            من الأول إلى الثاني عشر وتركز على إعداد الطلاب ليكونوا مفكرين وذوي رؤى مبتكرين
+                        <h3 style="color: #c20000;">مدرسة عمر بن عبد العزيز الخاصة</h3>
+                        <p style="text-align: justify; direction:rtl;">
+                            مؤسسة تعليمية رائدة ، تأسست عام 2003م ،
+                            تقع في محافظة ريف دمشق ،قرب منطقة الهامة ، على رابية مميزة مطلة على وادي بردى .
+                            تقدم خدمات التعليم قبل الجامعي من الصف الأول تعليم أساسي حتى الصف الثالث الثانوي من خلال
+                            تدريس المنهاج الوطني للجمهورية العربية السورية ، بالإضافة الى تقديم اللغة الانكليزية
+                            والفرنسية كمواد إثرائية عبر سلسلة عالمية متطورة
                         </p>
-                        <p style="font-size: 20px;">
-                            نحن نقدم تعليمًا على مستوى عالمي لا مثيل له بين المدارس الخاصة في مدينتنا، وقد تم تصميم
-                            مناهجنا التي تركز على الطلاب لتعزيز طلابنا بمعايير مرجعية تعليمية
+                        <p style="text-align: justify; direction:rtl;">
+                            تتميز المدرسة بتوفير بيئة تعليمية محفزة ومناسبة ، تساعد الطلاب على التعلم بفعالية وإبداع ،
+                            وتتضمن العناصر المادية والبشرية والثقافية والاجتماعية التي تتناسب مع احتياجاتهم وميولهم
+                            وقدراتهم
                         </p>
-                        <p style="font-size: 20px;">مجموعة القيم الأساسية لـمدرسة عمر بن عبد العزيز الخاصة تحكم الموظفين
-                            وكذلك الإدارة، لتنفيذ مناهجنا وإلهام الطلاب لإنجاز قدرات التعلم العليا حتى يتمكنوا من خدمة
-                            مجتمعهم من خلال كونهم مواطنين قدوة في مجتمعنا الأصيل</p>
-                        <p style="font-size: 20px;">
-                            تتوافق أهدافنا تمامًا مع الأجندة الوطنية السورية للتعليم، والتي تسعى جاهدة للتركيز على
-                            المسائل الدائمة مثل الرؤية وبناء الفرق والأنظمة، بالإضافة إلى التحسين المستمر في سلوك التعلم
-                            ونمو كل طالب على حدة
+                        <p style="text-align: justify; direction:rtl;">
+                            تضم المدرسة كوادر تعليمية وإدارية مميزة تم انتقاؤها بدقة كل حسب تخصصه .
+                            تتألف من عدة أبنية صممت وفق معايير عالمية تراعي الجوانب الصحية الجسدية و الجوانب الجمالية
+                            التي تحقق الراحة النفسية لروادها
                         </p>
-
+                        <p style="text-align: justify; direction:rtl;">
+                            تتوفر في المدرسة مرافق رياضية وثقافية وفنية متنوعة ، بما في ذلك ملعب لكرة القدم وملعبين لكرة
+                            السلة و الكرة الطائرة ، وصالات رياضية متعددة ، ومسرح ومكتبة ومختبرات علمية غنية بالأجهزة و
+                            الوسائل المتطورة
+                        </p>
+                        <p style="text-align: justify; direction:rtl;">
+                            يتم توفير خدمات النقل للطلاب من وإلى المدرسة .
+                            يمكن للطلاب الاستفادة من الأنشطة الإضافية مثل الرحلات المدرسية والأندية الطلابية
+                            والفرق الرياضية
+                        </p>
                     </div>
 
                     <div class="col-lg-6">
@@ -217,29 +238,34 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-explicit-fill"></i></div>
-                            <h4><a href="#">اللغة الإنجليزية</a></h4>
-                            <p>تم اعتماد منهج دراسي تم اختياره بعناية ليتم تدريسه على يد معلمين محترفين ذوي خبرة ومؤهلين
-                                تأهيلاً عاليًا ومخصصين لإثراء لغة طفلك والتفكير النقدي ومهارات التواصل</p>
+                            <h4><a href="index#services">اللغة الإنجليزية</a></h4>
+                            <p style="text-align: center; direction:rtl;">
+                                تم اعتماد سلسلة عالمية متطورة لتعليم اللغة الانكليزية في مدرستنا , يتم تدريسها كمواد
+                                إضافية بالتلازم مع تدريس الكتب المقررة من وزارة التربية و التعليم في الجمهورية العربية
+                                السورية
+
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch ">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-textarea"></i></div>
-                            <h4><a href="Playgrounds-Swimming-Pools-Gallery-Details-AR">ملاعب وحمامات السباحة</a></h4>
-                            <p>ولتحقيق هدف بناء الإنسان، قمنا بتوفير العديد من الملاعب مثل كرة القدم، وكرة السلة، والكرة
-                                الطائرة، بالإضافة إلى قاعات للجمباز والأيروبيكس وحمامي سباحة داخليين مدفأين للاستخدام
-                                خلال مواسم البرد</p>
+                            <div class="icon"><i class="bi bi-buildings-fill"></i></div>
+                            <h4><a href="index#services">المخابر</a></h4>
+                            <p style="text-align: center; direction:rtl;">
+                                تضم المدرسة خمسة مخابر متطورة لتدريس علم الأحياء و الفيزياء و الكيمياء , مجهزة بأحدث
+                                الأجهزة و المواد اللازمة للتجارب العلمية ووسائل الايضاح و أجهزة العرض الضوئية
+                            </p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-world"></i></div>
-                            <h4><a href="#">اللغة الفرنسية</a></h4>
-                            <p>يتم تعريف الأطفال باللغة الفرنسية بدءًا من الأعمار المبكرة في الصف الأول حتى الصف الثاني
-                                عشر، وذلك باستخدام مناهج دراسية ودية ومتقدمة قائمة على المهارات. يساعد المعلمون ذوو
-                                المهارات العالية أطفالك على التعلم والتفوق
+                            <h4><a href="index#services">اللغة الفرنسية</a></h4>
+                            <p style="text-align: center; direction:rtl;">
+                                نبدأ بتدريس اللغة الفرنسية لطلاب مدرستنا من الصف الأول تعليم أساسي حتى الصف الثالث
+                                الثانوي . مستخدمين أساليب متطورة مبنية على المهارات الأساسية الأربعة في تعليم اللغات
                             </p>
                         </div>
                     </div>
@@ -247,9 +273,11 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-book-half"></i></div>
-                            <h4><a href="Library-Gallery-Details-AR">المكتبة</a></h4>
-                            <p>يقوم طلابنا بزيارة المكتبة الرائعة بشكل دوري، كما يمكنهم الوصول إلى مجموعة متنوعة من
-                                الأدب والموسوعات والتاريخ والمراجع العلمية والكتب عند الحاجة
+                            <h4><a href="index#services">المكتبة</a></h4>
+                            <p style="text-align: center; direction:rtl;">
+                                تمتاز مدرستنا بمكتبة كبيرة و غنية بالكتب العلمية والأدبية و التاريخية , بما يتناسب مع
+                                كافة المراحل العمرية لطلابنا , ويتم تحديثها باستمرار لمواكبة التطور المستمر للعلوم
+                                يزورها طلاب المدرسة بشكل دوري
                             </p>
                         </div>
                     </div>
@@ -257,19 +285,24 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-laptop"></i></div>
-                            <h4><a href="#">تكنولوجيا المعلومات
+                            <h4><a href="index#services">تكنولوجيا المعلومات
                                 </a></h4>
-                            <p>نحن فخورون بتوفير مختبرات حاسوبية متقدمة تدعم خطتنا لتطوير مهارات طلابنا لمواكبة احتياجات
-                                القرن</p>
+                            <p style="text-align: center; direction:rtl;">
+                                نظراً لأهمية التكنولوجيا و التطور الحاسوبي والبرمجي , أهتمت مدرستنا بهذا القسم و أنشأت
+                                قاعات خاصة مجهزة بالحواسب اللازمة لتدريب جميع طلاب المدرسة على استخدام الحاسوب وبرامجه
+                                الأساسية
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 ">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-buildings-fill"></i></div>
-                            <h4><a href="Laboratories-Gallery-Details-AR">المختبرات</a></h4>
-                            <p>تم تخصيص المختبرات الخمسة المجهزة تجهيزًا عاليًا لتوفير بيئة آمنة وصديقة لتدريس الكيمياء
-                                والأحياء والفيزياء
+                            <div class="icon"><i class="bi bi-textarea"></i></div>
+                            <h4><a href="index#services">ملاعب وحمامات السباحة</a></h4>
+                            <p style="text-align: center; direction:rtl;">
+                                تضم المدرسة عدة ملاعب (كرة القدم – كرة السلة – الكرة الطائرة) بالإضافة لصالات (الجمباز و
+                                الأيروبيك) كما تحوي مسبحين مغلقين مدفأين ليتمكن الطلاب من ممارسة رياضة السباحة حتى في
+                                فصل الشتاء
                             </p>
                         </div>
                     </div>
@@ -334,9 +367,9 @@
 
                     <div class="col-lg-3 col-md-6 footer-info">
                         <h3>حول مدرسة عمر بن عبد العزيز الخاصة</h3>
-                        <p>أهلاً بكم في الموقع الرسمي لمدرسة عمر بن عبد العزيز الخاصة، حيث الحداثة والأصالة. تسعى
+                        <p style="text-align: justify; direction:rtl;">أهلاً بكم في الموقع الرسمي لمدرسة عمر بن عبد العزيز الخاصة، حيث الحداثة والأصالة. تسعى
                             مدرستنا إلى توفير تعليم عالي الجودة ضمن بيئة تعليمية محببة وملهمة ومشجعة لجميع طلابها</p>
-                        <div class="social-links mt-3">
+                        <div class="social-links mt-3" style="text-align: center;">
                             <a href="https://www.facebook.com/profile.php?id=100064479378941&mibextid=9R9pXO"
                                 class="facebook"><i class="bx bxl-facebook"></i></a>
                             <a href="https://instagram.com/omar.bin.abd.alaziz?igshid=MzMyNGUyNmU2YQ=="
@@ -351,11 +384,11 @@
                                     class="bx bx-chevron-left"></i></li>
                             <li style="display: block !important;"><a href="About-AR">حول المدرسة</a> <i
                                     class="bx bx-chevron-left"></i></li>
-                            <li style="display: block !important;"><a href="Services-AR">خدمات المدرسة</a> <i
-                                    class="bx bx-chevron-left"></i></li>
+                            <!-- <li style="display: block !important;"><a href="Services-AR">خدمات المدرسة</a> <i
+                                    class="bx bx-chevron-left"></i></li> -->
                             <li style="display: block !important;"><a href="Team-AR">فريق العمل</a> <i
                                     class="bx bx-chevron-left"></i></li>
-                            <li style="display: block !important;"><a href="Gallery-AR">الاستديو</a> <i
+                            <li style="display: block !important;"><a href="Gallery-AR">المعرض</a> <i
                                     class="bx bx-chevron-left"></i></li>
                             <li style="display: block !important;"><a href="LMS & SMS-AR">نظام إدارة المدرسة
                                     والمحتوى</a> <i class="bx bx-chevron-left"></i>
@@ -366,21 +399,24 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>خدمات المدرسة</h4>
+                        <h4>أقسام المدرسة</h4>
                         <ul>
-                            <li style="display: block !important;"><a href="Services#services">Web
-                                    Design</a> <i class="bx bx-chevron-left"></i></li>
-                            <li style="display: block !important;"><a href="Services#services">Web
-                                    Development</a> <i class="bx bx-chevron-left"></i></li>
-                            <li style="display: block !important;"><a href="Services#services">Web
-                                    Management</a> <i class="bx bx-chevron-left"></i></li>
-                            <li style="display: block !important;"><a href="Services#services">Product
-                                    Management</a> <i class="bx bx-chevron-left"></i>
-                            </li>
-                            <li style="display: block !important;"><a href="Services#services">Marketing</a> <i
+                            <li style="display: block !important;"><a href="index#featured">
+                                    قسم الذكور</a> <i class="bx bx-chevron-left"></i></li>
+                            <li style="display: block !important;"><a href="index#featured">
+                                    قسم الاناث</a> <i class="bx bx-chevron-left"></i></li>
+                            <li style="display: block !important;"><a href="index#featured">
+                                    قسم الحلقة الأولى</a> <i class="bx bx-chevron-left"></i></li>
+                            <li style="display: block !important;"><a href="index#services">
+                                    تكنولوجيا المعلومات</a> <i class="bx bx-chevron-left"></i></li>
+                            <!-- <li style="display: block !important;"><a href="index#services">
+                                    اللغة الانكليزية والفرنسية</a> <i class="bx bx-chevron-left"></i>
+                            </li> -->
+                            <li style="display: block !important;"><a href="index#services">المكتبة</a> <i
                                     class="bx bx-chevron-left"></i></li>
-                            <li style="display: block !important;"><a href="Services#services">Graphic
-                                    Design</a> <i class="bx bx-chevron-left"></i></li>
+                            <li style="display: block !important;"><a href="index#services">
+                                    المخابر</a> <i class="bx bx-chevron-left"></i></li>
+
                         </ul>
                     </div>
 
@@ -402,7 +438,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; كل الحقوق محفوظة ل<strong><span>مدرسة عمر بن عبد العزيز الخاصة</span></strong> حقوق النشر
+                &copy; كل الحقوق محفوظة <strong><span>لمدرسة عمر بن عبد العزيز الخاصة</span></strong> حقوق النشر
             </div>
             <div class="credits">
                 <a href="https://CoreTech-Mena.com/">CoreTech-Mena</a> صمم من قبل شركة
