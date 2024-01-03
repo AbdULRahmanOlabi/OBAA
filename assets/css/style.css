@@ -382,7 +382,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background-color: rgba(59, 59, 59, 0.8);
   overflow: hidden;
   padding: 0;
@@ -393,7 +393,7 @@ h6 {
 
 #hero .carousel-item {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -530,13 +530,33 @@ h6 {
   text-decoration: none;
 }
 
+.videooverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.delay-text {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 7s; /* Delay the start of animation by 3 seconds */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 @media (max-height: 768px), (max-width: 1200px) {
   #hero {
     margin-bottom: 60px;
-  }
-
-  #hero .carousel-container {
-    padding-bottom: 0;
   }
 
   #hero .carousel-indicators li {
@@ -546,13 +566,49 @@ h6 {
 
 @media (max-width: 768px) {
   #hero {
-    height: 25vh;
+    height: 28vh;
     /* height: 90vh; */
   }
 
   #hero .carousel-item {
-    height: 25vh;
+    height: 44vh;
     /* height: 90vh; */
+  }
+
+  #hero h3 {
+    font-size: 15px; /* Reduce font size for heading */
+    margin-bottom: 20px;
+  }
+
+  #hero p {
+    width: 90%; /* Adjust the width for smaller screens */
+    font-size: 14px; /* Reduce font size for paragraph */
+    margin: 0 auto 20px auto; /* Adjust margins */
+  }
+
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
+    width: 8%; /* Adjust control button width */
+  }
+
+  #hero .btn-get-started {
+    font-size: 9px; /* Reduce font size for button text */
+    padding: 8px 24px; /* Adjust button padding */
+    margin: 8px; /* Adjust button margins */
+    border-width: 1px; /* Adjust button border width */
+  }
+
+  #hero .carousel-indicators li {
+    margin-bottom: 0; /* Remove excessive margin */
+    display: none; /* Display indicators on smaller screens */
+  }
+
+  #hero .delay-text {
+    padding-bottom: 85px;
+  }
+
+  #hero .delay-text a {
+    margin-bottom: 55px;
   }
   
 }
