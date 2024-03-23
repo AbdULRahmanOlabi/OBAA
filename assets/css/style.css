@@ -4,6 +4,7 @@
 body {
   font-family: "Cairo", sans-serif;
   color: #444444;
+  overflow-x: hidden; /* Hide vertical scrollbar */
 }
 
 a {
@@ -139,7 +140,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Navigation Menu - EN
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
@@ -235,7 +236,9 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #c20000;
+  color: #fff;
+  background-color: #c20000;
+  /* color: #c20000; */
 }
 
 .navbar .dropdown:hover > ul {
@@ -281,7 +284,8 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #000;
+  font-size: 36px;
 }
 
 @media (max-width: 991px) {
@@ -291,6 +295,10 @@ h6 {
 
   .navbar ul {
     display: none;
+  }
+
+  .navbar ul li {
+    text-align: right !important;
   }
 }
 
@@ -306,19 +314,29 @@ h6 {
   z-index: 999;
 }
 
-.navbar-mobile .mobile-nav-toggle {
+/* .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
+  right: 15px;
+} */
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 25px;
   right: 15px;
 }
 
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
+  /* top: 55px;
   right: 15px;
   bottom: 15px;
-  left: 15px;
+  left: 15px; */
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
   padding: 10px 0;
   background-color: #fff;
   overflow-y: auto;
@@ -374,6 +392,262 @@ h6 {
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu - AR
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar-ar {
+  padding: 0;
+}
+
+.navbar-ar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar-ar li {
+  position: relative;
+}
+
+.navbar-ar a,
+.navbar-ar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  color: #545454;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar-ar a i,
+.navbar-ar a:focus i {
+  font-size: 18px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar-ar a:hover,
+.navbar-ar .active,
+.navbar-ar .active:focus,
+.navbar-ar li:hover > a {
+  color: #c20000;
+}
+
+.navbar-ar .getstarted,
+.navbar-ar .getstarted:focus {
+  background: #c20000;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.navbar-ar .getstarted:hover,
+.navbar-ar .getstarted:focus:hover {
+  color: #fff;
+  background: #c20000;
+}
+
+.navbar-ar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 24px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar-ar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-ar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #545454;
+}
+
+.navbar-ar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-ar .dropdown ul a:hover,
+.navbar-ar .dropdown ul .active:hover,
+.navbar-ar .dropdown ul li:hover > a {
+  color: #fff;
+  background-color: #c20000;
+  /* color: #c20000; */
+}
+
+.navbar-ar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+  left: calc(100% - 100px);
+}
+
+.navbar-ar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar-ar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar-ar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar-ar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle-ar {
+  color: #545454;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle-ar.bi-x {
+  color: #000;
+  font-size: 36px;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle-ar {
+    display: block;
+  }
+
+  .navbar-ar ul {
+    display: none;
+  }
+
+  .navbar-ar ul li {
+    text-align: right !important;
+  }
+}
+
+.navbar-mobile-ar {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(59, 59, 59, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile-ar .mobile-nav-toggle-ar {
+  position: absolute;
+  top: 25px;
+  left: 18px;
+}
+
+.navbar-mobile-ar ul {
+  /* display: block; */
+  display: flex;
+  flex-direction: column; /* Arrange list items vertically */
+  align-items: flex-end; /* Align items to the right */
+  position: absolute;
+  /* top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px; */
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile-ar a,
+.navbar-mobile-ar a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #545454;
+}
+
+.navbar-mobile-ar a:hover,
+.navbar-mobile-ar .active,
+.navbar-mobile-ar li:hover > a {
+  color: #c20000;
+}
+
+.navbar-mobile-ar .getstarted,
+.navbar-mobile-ar .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile-ar .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transform: translateX(-25%);
+  transform: translateY(-5%);
+  right: 100%;
+}
+
+.navbar-mobile-ar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile-ar .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile-ar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile-ar .dropdown ul a:hover,
+.navbar-mobile-ar .dropdown ul .active:hover,
+.navbar-mobile-ar .dropdown ul li:hover > a {
+  color: #fff;
+}
+
+.navbar-mobile-ar .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -546,10 +820,10 @@ h6 {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -609,7 +883,6 @@ h6 {
   #hero .delay-text a {
     margin-bottom: 55px;
   }
-  
 }
 
 @media (min-width: 1024px) {
@@ -2287,10 +2560,10 @@ section {
   color: #fff;
 }
 
-#footer .credits  a {
+#footer .credits a {
   color: #c20000;
 }
 
-#footer .credits  a:hover{
+#footer .credits a:hover {
   color: #ff0000;
 }

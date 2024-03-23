@@ -89,7 +89,7 @@
   }
 
   /**
-   * Mobile nav toggle
+   * Mobile nav toggle - EN
    */
   on("click", ".mobile-nav-toggle", function (e) {
     select("#navbar").classList.toggle("navbar-mobile");
@@ -98,7 +98,7 @@
   });
 
   /**
-   * Mobile nav dropdowns activate
+   * Mobile nav dropdowns activate - EN
    */
   on(
     "click",
@@ -111,6 +111,30 @@
     },
     true
   );
+
+    /**
+   * Mobile nav toggle - AR
+   */
+    on("click", ".mobile-nav-toggle-ar", function (e) {
+      select("#navbar-ar").classList.toggle("navbar-mobile-ar");
+      this.classList.toggle("bi-list");
+      this.classList.toggle("bi-x");
+    });
+  
+    /**
+     * Mobile nav dropdowns activate - AR
+     */
+    on(
+      "click",
+      ".navbar-ar .dropdown > a",
+      function (e) {
+        if (select("#navbar-ar").classList.contains("navbar-mobile-ar")) {
+          e.preventDefault();
+          this.nextElementSibling.classList.toggle("dropdown-active");
+        }
+      },
+      true
+    );
 
   /**
    * Scrool with ofset on links with a class name .scrollto
