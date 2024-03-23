@@ -66,11 +66,26 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="index-En">Home</a></li>
+          <li><a class="active" href="Index-En">Home</a></li>
           <li><a href="About">About</a></li>
           <!-- <li><a href="Services">Services</a></li> -->
           <li><a href="Team">Team</a></li>
-          <li><a href="Gallery">Gallery</a></li>
+          <!-- <li><a href="Gallery">Gallery</a></li> -->
+          <li class="dropdown has-dropdown"><a href="Gallery">Gallery</a>
+            <ul class="dd-box-shadow">
+              <li><a href="Gallery?filter=filter-M"><iconify-icon icon="noto:boy-light-skin-tone" width="1.2em"
+                    height="1.2em"></iconify-icon>Male Section</a></li>
+              <li><a href="Gallery?filter=filter-FM"><iconify-icon icon="noto:girl-light-skin-tone" width="1.2em"
+                    height="1.2em"></iconify-icon>Female Section</a>
+              </li>
+              <li><a href="Gallery?filter=filter-FC"><iconify-icon icon="noto:baby-angel-light-skin-tone" width="1.2em"
+                    height="1.2em"></iconify-icon>Primary Section</a>
+              </li>
+              <li><a href="Gallery?filter=filter-SG"><iconify-icon icon="noto:sports-medal" width="1.2em"
+                    height="1.2em"></iconify-icon>Public Activities</a>
+              </li>
+            </ul>
+          </li>
           <li><a href="LMS & SMS">LMS & SMS</a></li>
           <li><a href="Contact">Contact</a></li>
           <li class="dropdown has-dropdown" style="float: left;"><a style="float: left;" href=""><i
@@ -110,21 +125,32 @@
             </div>
           </div> -->
 
-                              <!-- Video -->
-                              <div class="carousel-item active">
-                                <div class="carousel-container">
-                                    <div class="carousel-content">
-                                        <video autoplay muted width="100%" height="auto" alt="Sky">
-                                            <source src="assets/img/slide/OBAA.mp4" type="video/mp4">
-                                            <p>Sorry, Your Browser Doesn't Support Embedded Videos.</p>
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-
+          <!-- Video -->
+          <div class="carousel-item active">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <video autoplay muted width="100%" height="auto" alt="Sky">
+                  <source src="assets/img/slide/OBAA.mp4" type="video/mp4" />
+                  <p>عذرًا، متصفحك لا يدعم مقاطع الفيديو المضمنة</p>
+                </video>
+                <div class="videooverlay delay-text">
+                  <h3 class="animate__animated animate__fadeInDown">
+                    Welcome To The
+                    <span>Official Website of Omar Bin Abdulaziz School</span>
+                  </h3>
+                  <p class="animate__animated animate__fadeInUp">
+                    We Provide High-Quality Education Within a Loving, Inspiring and Encouraging <br> Learning Environment
+                    For All Students
+                    <a href="" class="btn-get-started animate__animated animate__fadeInUp">Reserve Your Seat Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+      </div>
+
+      <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
 
@@ -132,7 +158,7 @@
           <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
         </a> -->
 
-      </div>
+    </div>
     </div>
   </section><!-- End Hero -->
 

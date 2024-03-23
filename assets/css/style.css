@@ -525,9 +525,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: transparent;
-  color: #8b0000;
-  text-decoration: none;
+  background: #c20000;
+  color: #fff;
 }
 
 .videooverlay {
@@ -1204,14 +1203,14 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 2px;
-  font-size: 36px;
+  font-size: 20px;
   display: inline-block;
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+/* .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #8b0000;
-}
+} */
 
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
@@ -2286,4 +2285,12 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+#footer .credits  a {
+  color: #c20000;
+}
+
+#footer .credits  a:hover{
+  color: #ff0000;
 }
