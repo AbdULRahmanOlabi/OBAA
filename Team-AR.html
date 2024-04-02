@@ -64,9 +64,32 @@
       <nav id="navbar-ar" class="navbar-ar">
         <ul>
           <li><a href="index">الصفحة الرئيسية</a></li>
-          <li><a href="About-AR">حول المدرسة</a></li>
+          <li class="dropdown has-dropdown">
+            <a style="float: right;" href="About-AR">حول المدرسة</a>
+            <ul class="dd-box-shadow">
+              <li class="dropdown"><a href=""><iconify-icon icon="mingcute:paper-line" width="1.2em"
+                    height="1.2em"></iconify-icon>الأوراق المطلوبة</a>
+                <ul>
+                  <li><a href="PaperworkPM-AR.html">الابتدائي والاعدادي<iconify-icon icon="fa6-solid:children"
+                        width="1.2em" height="1.2em"></iconify-icon></a></li>
+                  <li><a href="PaperworkF-AR.html">الطلاب الاجانب<iconify-icon icon="bi:passport" width="1.2em"
+                        height="1.2em"></iconify-icon></a></li>
+                  <li><a href="PaperworkS-AR.html">المرحلة الثانوية<iconify-icon icon="ic:outline-school" width="1.2em"
+                        height="1.2em"></iconify-icon></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="Financial-AR.html"><iconify-icon icon="vaadin:money" width="1.2em"
+                    height="1.2em"></iconify-icon>القسم المالي</a>
+              </li>
+              <li>
+                <a href="Transport-AR.html"><iconify-icon icon="solar:bus-bold" width="1.2em"
+                    height="1.2em"></iconify-icon>قسم النقل</a>
+              </li>
+            </ul>
+          </li>
           <!-- <li><a href="Services-AR">خدمات المدرسة</a></li> -->
-          <li><a class="active" href="Team-AR">فريق العمل</a></li>
+          <li><a class="active" href="Team-AR">الإدارة</a></li>
           <!-- <li><a href="Gallery-AR">المعرض</a></li> -->
           <li class="dropdown has-dropdown">
             <a style="float: right;" href="Gallery-AR">المعرض</a>
@@ -92,7 +115,7 @@
           <li><a href="LMS & SMS-AR">أنظمة إدارة المدرسة والمحتوى</a></li>
           <li><a href="Contact-AR">تواصل معنا</a></li>
           <li class="dropdown has-dropdown">
-            <a style="float: right" href=""><i class="bi bi-translate"></i></a>
+            <a style="float: right;" href=""><i class="bi bi-translate"></i></a>
             <ul class="dd-box-shadow">
               <li>
                 <a href="Team"><iconify-icon icon="emojione-v1:flag-for-united-states"></iconify-icon>English</a>
@@ -130,7 +153,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="assets/img/team/Ziad Rashid Al-Turk.jpg" alt="زياد راشد الترك" />
-              <h4 style="color: #c20000">زياد راشد الترك</h4>
+              <h4 style="color: #c20000">الدكتور زياد راشد الترك</h4>
               <span>المدير العام</span>
               <!-- <p>
                 Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut
@@ -147,26 +170,9 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/team/Jihad Al-Turk.jpg" alt="جهاد الترك" />
-              <h4 style="color: #c20000">جهاد الترك</h4>
-              <span>المدير الإداري</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
               <img src="assets/img/team/Nadia Idris.jpg" alt="نادية ادريس" />
-              <h4 style="color: #c20000">نادية ادريس</h4>
-              <span>مديرة المدرسة ونائبة الصاحب</span>
+              <h4 style="color: #c20000">أ. نادية إدريس</h4>
+              <span>نائب الصاحب</span>
               <!-- <p>
                 Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
               </p> -->
@@ -181,8 +187,26 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
+              <img src="assets/img/team/Jihad Al-Turk.jpg" alt="جهاد الترك" />
+              <h4 style="color: #c20000">أ. جهاد الترك</h4>
+              <span>المدير الإداري</span>
+              <!-- <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p> -->
+              <!-- <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
               <img src="assets/img/team/Majid Al-Ruwaishidi.jpg" alt="ماجد الرويشدي" />
-              <h4 style="color: #c20000">ماجد الرويشدي</h4>
+              <h4 style="color: #c20000">أ. ماجد الرويشدي</h4>
               <span>المنسق التعليمي</span>
               <!-- <p>
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
@@ -198,26 +222,9 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/team/Mohannad Salem.jpg" alt="مهند سالم" />
-              <h4 style="color: #c20000">مهند سالم</h4>
-              <span>مسؤول قسم المالي</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
               <img src="assets/img/team/Mahmoud Allawi.jpg" alt="محمود  علاوي" />
-              <h4 style="color: #c20000">محمود علاوي</h4>
-              <span>مسؤول قسم الذكور</span>
+              <h4 style="color: #c20000">أ. محمود علاوي</h4>
+              <span>مشرف قسم الذكور</span>
               <!-- <p>
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
               </p> -->
@@ -233,8 +240,8 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="assets/img/team/Mona Qubtan.jpg" alt="منى قبطان" />
-              <h4 style="color: #c20000">منى قبطان</h4>
-              <span>مسؤولة قسم الإناث</span>
+              <h4 style="color: #c20000">أ. منى قبطان</h4>
+              <span>مشرفة قسم الإناث</span>
               <!-- <p>
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
               </p> -->
@@ -250,127 +257,8 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="assets/img/team/Maysaa Al-Takriti.jpg" alt="Maysaa Al-Takriti" />
-              <h4 style="color: #c20000">ميساء التكريتي</h4>
-              <span>مسؤولة قسم الحلقة الاولى</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/Adnan Nehme.jpg" alt="عدنان نعمو" />
-              <h4 style="color: #c20000">عدنان نعمو</h4>
-              <span>مسؤول قسم المعلوماتية</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/Wesal Al-Karkutli.jpg" alt="وصال الكركوتلي" />
-              <h4 style="color: #c20000">وصال الكركوتلي</h4>
-              <span>مسؤولة قسم الإنجليزي</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/Lina Bitar.jpg" alt="لينا بيطار" />
-              <h4 style="color: #c20000">لينا بيطار</h4>
-              <span>مسؤولة قسم الفرنسي</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/Salwa Halbouni.jpg" alt="سلوى حلبوني" />
-              <h4 style="color: #c20000">سلوى حلبوني</h4>
-              <span>مسؤولة قسم شؤون الطلاب</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/Hassan Taki Al-Din.jpg" alt="حسان تقي" />
-              <h4 style="color: #c20000">حسان تقي</h4>
-              <span>مسؤول قسم الاعلام والميديا</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/Abeer Al Sawaf.jpg" alt="عبير الصواف" />
-              <h4 style="color: #c20000">عبير الصواف</h4>
-              <span>مسؤولة قسم النقل</span>
-              <!-- <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p> -->
-              <!-- <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/Malik Al-Tatari.jpg" alt="مالك التتطري" />
-              <h4 style="color: #c20000">مالك التتطري</h4>
-              <span>مسؤول قسم الخدمات</span>
+              <h4 style="color: #c20000">أ. ميساء التكريتي</h4>
+              <span>مشرفة قسم الحلقة الأولى</span>
               <!-- <p>
                 Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
               </p> -->
@@ -423,7 +311,7 @@
               <!-- <li style="display: block !important;"><a href="Services-AR">خدمات المدرسة</a> <i
                   class="bx bx-chevron-left"></i></li> -->
               <li style="display: block !important">
-                <a href="Team-AR">فريق العمل</a>
+                <a href="Team-AR">الإدارة</a>
                 <i class="bx bx-chevron-left"></i>
               </li>
               <li style="display: block !important">
