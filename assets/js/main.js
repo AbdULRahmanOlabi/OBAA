@@ -306,42 +306,42 @@
 document.addEventListener("DOMContentLoaded", function () {
   var MalesDivAR = document.getElementById("MalesDivAR");
   MalesDivAR.addEventListener("click", function () {
-    window.location.href = "Gallery-AR?filter=filter-M";
+    window.location.href = "Male-AR";
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   var FemalesDivAR = document.getElementById("FemalesDivAR");
   FemalesDivAR.addEventListener("click", function () {
-    window.location.href = "Gallery-AR?filter=filter-FM";
+    window.location.href = "Female-AR";
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   var FirstCycleDivAR = document.getElementById("FirstCycleDivAR");
   FirstCycleDivAR.addEventListener("click", function () {
-    window.location.href = "Gallery-AR?filter=filter-FC";
+    window.location.href = "FirstCycle-AR";
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   var MalesDiv = document.getElementById("MalesDiv");
   MalesDiv.addEventListener("click", function () {
-    window.location.href = "Gallery?filter=filter-M";
+    window.location.href = "Male";
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   var FemalesDiv = document.getElementById("FemalesDiv");
   FemalesDiv.addEventListener("click", function () {
-    window.location.href = "Gallery?filter=filter-FM";
+    window.location.href = "Female";
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   var FirstCycleDiv = document.getElementById("FirstCycleDiv");
   FirstCycleDiv.addEventListener("click", function () {
-    window.location.href = "Gallery?filter=filter-FC";
+    window.location.href = "FirstCycle";
   });
 });
 
