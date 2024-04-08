@@ -1060,7 +1060,19 @@ section {
 #FemalesDivAR,
 #FirstCycleDiv,
 #MalesDiv,
-#FemalesDiv {
+#FemalesDiv,
+#EnglishDiv,
+#EnglishDivAR,
+#FrenchDiv,
+#FrenchDivAR,
+#LibraryDiv,
+#LibraryDivAR,
+#LaboratoryDiv,
+#LaboratoryDivAR,
+#InformaticsDiv,
+#InformaticsDivAR,
+#ActivityDiv,
+#ActivityDivAR {
   cursor: pointer;
 }
 

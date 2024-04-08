@@ -345,3 +345,88 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var EnglishDiv = document.getElementById("EnglishDiv");
+  EnglishDiv.addEventListener("click", function () {
+    window.location.href = "English";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var EnglishDivAR = document.getElementById("EnglishDivAR");
+  EnglishDivAR.addEventListener("click", function () {
+    window.location.href = "English-AR";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var FrenchDiv = document.getElementById("FrenchDiv");
+  FrenchDiv.addEventListener("click", function () {
+    window.location.href = "French";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var FrenchDivAR = document.getElementById("FrenchDivAR");
+  FrenchDivAR.addEventListener("click", function () {
+    window.location.href = "French-AR";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var ActivityDiv = document.getElementById("ActivityDiv");
+  ActivityDiv.addEventListener("click", function () {
+    window.location.href = "Activity";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var ActivityDivAR = document.getElementById("ActivityDivAR");
+  ActivityDivAR.addEventListener("click", function () {
+    window.location.href = "Activity-AR";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var LibraryDiv = document.getElementById("LibraryDiv");
+  LibraryDiv.addEventListener("click", function () {
+    window.location.href = "Library";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var LibraryDivAR = document.getElementById("LibraryDivAR");
+  LibraryDivAR.addEventListener("click", function () {
+    window.location.href = "Library-AR";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var InformaticsDiv = document.getElementById("InformaticsDiv");
+  InformaticsDiv.addEventListener("click", function () {
+    window.location.href = "Informatics";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var InformaticsDivAR = document.getElementById("InformaticsDivAR");
+  InformaticsDivAR.addEventListener("click", function () {
+    window.location.href = "Informatics-AR";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var LaboratoryDiv = document.getElementById("LaboratoryDiv");
+  LaboratoryDiv.addEventListener("click", function () {
+    window.location.href = "Laboratories";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var LaboratoryDivAR = document.getElementById("LaboratoryDivAR");
+  LaboratoryDivAR.addEventListener("click", function () {
+    window.location.href = "Laboratories-AR";
+  });
+});
+
+
