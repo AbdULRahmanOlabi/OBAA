@@ -920,11 +920,11 @@ body::-webkit-scrollbar-thumb {
   }
 
   #hero .delay-text {
-    /* padding-bottom: 25px; */
+    padding-bottom: 25px;
   }
 
   #hero .delay-text a {
-    /* margin-bottom: 55px; */
+    margin-bottom: 55px;
   }
 }
 
