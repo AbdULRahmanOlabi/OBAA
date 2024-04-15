@@ -853,6 +853,14 @@ body::-webkit-scrollbar-thumb {
   animation-delay: 87s; /* Delay the start of animation by seconds */
 }
 
+#hero .delay-text {
+  padding-bottom: 200px;
+}
+
+#hero .delay-text a {
+  margin-bottom: 55px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
