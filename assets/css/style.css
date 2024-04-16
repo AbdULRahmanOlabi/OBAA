@@ -191,6 +191,15 @@ body::-webkit-scrollbar-thumb {
     order: 3;
   }
 
+  .header .logo img {
+    max-height: 75px !important;
+  }
+
+  .header .btn-getstarted,
+  .header .btn-getstarted:focus {
+    font-size: 10px;
+  }
+
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
@@ -201,7 +210,6 @@ body::-webkit-scrollbar-thumb {
     order: 1;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Navigation Menu - EN
