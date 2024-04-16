@@ -169,6 +169,40 @@ body::-webkit-scrollbar-thumb {
   margin-top: 70px;
 }
 
+.header .btn-getstarted,
+.header .btn-getstarted:focus {
+  color: #ffffff;
+  background: #c20000;
+  font-size: 14px;
+  padding: 8px 26px;
+  margin: 0;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.header .btn-getstarted:hover,
+.header .btn-getstarted:focus:hover {
+  color: #ffffff;
+  background: #8b0000;
+}
+
+@media (max-width: 1200px) {
+  .header .logo {
+    order: 3;
+  }
+
+  .header .btn-getstarted {
+    order: 2;
+    margin: 0 15px 0 0;
+    padding: 6px 20px;
+  }
+
+  .header .navbar-ar {
+    order: 1;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu - EN
 --------------------------------------------------------------*/
@@ -2621,4 +2655,28 @@ section {
 
 #footer .credits a:hover {
   color: #ff0000;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .footer-columns {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    order: 3;
+  }
+
+  .footer-links:nth-child(2) {
+    order: 2;
+  }
+
+  .footer-links:nth-child(3) {
+    order: 1;
+  }
 }
